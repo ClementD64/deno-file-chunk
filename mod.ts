@@ -1,7 +1,7 @@
 /** Read a chunk of file
  * 
  *     // read only byte 20 to 30
- *     const file = Chunk.openSync('/path/to/file', 20, 30);
+ *     const file = Chunk.openSync("/path/to/file", 20, 30);
  *     const data = Deno.readAllSync(file);
  *     file.close(); // don't forget to close reader
  * 
@@ -9,7 +9,7 @@
  * 
  *     const start = 10;
  *     const end = 20;
- *     const size = (await Deno.stat('/path/to/file')).size;
+ *     const size = (await Deno.stat("/path/to/file")).size;
  *     
  *     req.respond({
  *       status: 206,
@@ -18,7 +18,7 @@
  *         "Content-Range": `bytes ${start}-${end}/${size}`,
  *         "Content-Length": (end - start + 1).toString(),
  *       }),
- *       body: await Chunk.open('/path/to/file', start, end)
+ *       body: await Chunk.open("/path/to/file", start, end)
  *     });
  */
 export class Chunk extends Deno.File {
