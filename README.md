@@ -1,4 +1,4 @@
-# Deno File Chunk [![deno doc](https://doc.deno.land/badge.svg)](https://deno.land/x/file_chunk/mod.ts)
+# Deno File Chunk [![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/file_chunk/mod.ts)
 
 Read a chunk of file
 
